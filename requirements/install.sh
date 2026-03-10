@@ -551,6 +551,22 @@ install_env_only() {
     create_and_sync_venv
     SKIP_ROS=${SKIP_ROS:-0}
     case "$ENV_NAME" in
+        maniskill_libero)
+            install_common_embodied_deps
+            install_maniskill_libero_env
+            ;;
+        metaworld)
+            install_common_embodied_deps
+            install_metaworld_env
+            ;;
+        calvin)
+            install_common_embodied_deps
+            install_calvin_env
+            ;;
+        robocasa)
+            install_common_embodied_deps
+            install_robocasa_env
+            ;;
         franka)
             uv sync --extra franka --active $NO_INSTALL_RLINF_CMD
             if [ "$SKIP_ROS" -ne 1 ]; then

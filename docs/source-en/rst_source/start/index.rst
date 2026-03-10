@@ -2,10 +2,11 @@ Quickstart
 ==========
 
 Welcome to the RLinf Quickstart Guide. This section will walk you through launching RLinf for the first time. 
-We present three concise examples to demonstrate the framework's workflow and help you get started quickly.
+We present several concise paths to demonstrate the framework's workflow and help you get started quickly.
 
 
 - **Installation:** Two installation methods for RLinf are supported: using a Docker image or a custom user environment (see :doc:`installation`).
+- **UV beginner path:** A minimal non-Docker onboarding flow for first-time users (see :doc:`uv-embodied-beginner`).
 
 - **Embodied training:** Training in the ManiSkill3 environment with the OpenVLA and OpenVLA-OFT models using the PPO algorithm (see :doc:`vla`).
 
@@ -30,6 +31,7 @@ For agentic tasks (including math reasoning), RLinf achieves SOTA performance on
    :maxdepth: 1
 
    installation
+   uv-embodied-beginner
    vla
    llm
    distribute
